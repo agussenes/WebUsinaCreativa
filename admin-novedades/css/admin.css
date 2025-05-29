@@ -1,0 +1,158 @@
+/* admin.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003547;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header img {
+  max-height: 50px;
+}
+
+header .logout {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background: #007bff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+header .logout:hover {
+  background: #0056b3;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #003547;
+  margin-top: 1.5rem;
+}
+
+form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 500px;
+  margin: 1rem auto 2rem;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="file"],
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.novedades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin: 0.2rem 0;
+  color: #003547;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.card .actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.card .actions a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card .actions a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  background: #f0f0f0;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

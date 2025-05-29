@@ -1,0 +1,8 @@
+# Evitar ejecución de scripts
+<FilesMatch "\.(php|js|sh|py|exe)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# Evitar listado de archivos
+Options -Indexes

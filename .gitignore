@@ -1,0 +1,10 @@
+# Ignorar entorno de producción en admin
+/admin-novedades/.env
+
+# Ignorar dependencias y build en React
+/porfolio/node_modules/
+/porfolio/dist/
+
+# Otros archivos opcionales a ignorar
+.DS_Store
+Thumbs.db
