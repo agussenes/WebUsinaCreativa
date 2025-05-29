@@ -79,6 +79,7 @@ if (isset($_GET['eliminar'])) {
 <!DOCTYPE html>
 <html lang="es">
 <head><meta charset="UTF-8"><title>Panel Novedades</title>
+<link rel="icon" href="novedades/imagenes/faviCon.jpg" type="image/jpeg">
 <link rel="stylesheet" href="./css/admin.css">
 
 </head>

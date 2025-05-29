@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Login - Admin Novedades</title>
-
+  <link rel="icon" href="novedades/imagenes/faviCon.jpg" type="image/jpeg">
   <link rel="stylesheet" href="./css/admin.css">
 
 </head>
